@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+   
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" android:gravity="top" android:text="Calculate equal length of all Radius Segments, and proper turning angle to the next segment:"/>
+	
+	<TextView 
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 
+	android:textAppearance="?android:attr/textAppearanceMedium" 
+	android:id="@+id/widget28" 
+	android:layout_marginLeft="10px" android:text="HEIGHT [in]" android:layout_marginTop="35px">
+	</TextView>
+
+	<EditText android:layout_height="wrap_content" 
+	android:id="@+id/amount1" 
+	android:width="100px" 
+	android:layout_width="200px" 
+	android:layout_marginLeft="240px" 
+	android:layout_marginTop="-45px" 
+	android:inputType="number|numberSigned|numberDecimal" 
+	android:text=" ">
+	<requestFocus></requestFocus>
+	</EditText>
+	
+	<TextView 
+	android:layout_height="wrap_content" 
+	android:id="@+id/widget29" 
+	android:layout_width="wrap_content" 
+	android:textAppearance="?android:attr/textAppearanceMedium" 
+	android:layout_marginLeft="10px" android:text="WIDTH [in]" android:layout_marginTop="20px">
+	</TextView>
+
+	<EditText android:layout_height="wrap_content" 
+	android:id="@+id/amount2" 
+	android:width="100px" 
+	android:layout_width="200px" 
+	android:layout_marginLeft="240px" 
+	android:layout_marginTop="-55px" 
+	android:inputType="number|numberSigned|numberDecimal" 
+	android:text=" ">
+	</EditText>
+
+	<TextView 
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 
+	android:textAppearance="?android:attr/textAppearanceMedium" 
+	android:id="@+id/widget30" 
+	android:layout_marginLeft="10px" 
+	android:layout_marginTop="10px" 
+	android:text="# SEGMENTS">
+	</TextView>
+
+	<EditText android:layout_height="wrap_content" 
+	android:id="@+id/amount3" 
+	android:width="100px" 
+	android:layout_width="200px" 
+	android:layout_marginLeft="240px" 
+	android:layout_marginTop="-45px" 
+	android:inputType="number" 
+	android:text=" ">
+	</EditText>
+
+	<TextView android:layout_marginLeft="10px" 
+	android:id="@+id/TextView01" 
+	android:textAppearance="?android:attr/textAppearanceMedium" 
+	android:layout_marginTop="10px" 
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 
+	android:text="LEG SIZE [in]">
+	</TextView>
+
+	<EditText android:id="@+id/amount4" 
+	android:layout_height="wrap_content" 
+	android:layout_width="200px" 
+	android:layout_marginLeft="240px"
+	android:layout_marginTop="-45px"
+	android:inputType="number|numberSigned|numberDecimal">
+	</EditText>
+
+	<Button android:id="@+id/calculate" 
+	android:layout_height="wrap_content" 
+	android:layout_marginLeft="10px"
+	android:layout_marginTop="-5px"
+	android:layout_width="220px" 
+	android:text="CALCULATE LENGTH ---&gt;" 
+	android:clickable="true">
+	</Button>
+
+	<Button android:background="@drawable/graphic2a" android:clickable="true" 
+	android:layout_width="400px" android:layout_marginLeft="40px" 
+	android:layout_height="140px" android:id="@+id/clearFields" 
+	android:layout_marginTop="104px"></Button>
+	
+	<EditText
+	    android:id="@+id/segmentLength"
+	    android:layout_width="200px"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="240px"
+	    android:layout_marginTop="-322px"
+	    android:editable="false"
+	    android:text="    {LENGTH}" >
+
+	</EditText>
+
+	<TextView
+	    android:id="@+id/textView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10px"
+	    android:layout_marginTop="15dp"
+	    android:text="TURN ANGLE [deg]"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<EditText
+	    android:id="@+id/turnAngle"
+	    android:layout_width="90dp"
+	    android:layout_height="34dp"
+	    android:layout_marginLeft="182dp"
+	    android:layout_marginTop="-35px"
+	    android:editable="false"
+	    android:ems="10"
+	    android:text=" {angle}" />
+
+</LinearLayout>
